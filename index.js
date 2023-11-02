@@ -16,9 +16,9 @@ const db = new pg.Client({
 db.connect();
 
 let quiz = [
-  { name: "France", flag: "FR" },
-  { country: "United Kingdom", capital: "Uk" },
-  { country: "United States of America", capital: "US" },
+  { name: "France", flag: "🇫🇷" },
+  { name: "United Kingdom", flag: "🇬🇧" },
+  { name: "United States of America", flag: "🇺🇸" },
 ];
 
 db.query("SELECT * FROM flags", (err, res) => {
